@@ -31,6 +31,14 @@ public class Doctor extends Employee
         this.type = type;
     }
 
+    @Override
+    public void displayEmployeeDetails() {
+        System.out.println("Doctor Name" + getEmployeeName() );
+        System.out.println("Doctor Email" + getEmployeeEmail());
+        System.out.println("Doctor Gender" + getEmployeeGender());
+        System.out.println("Doctor address" + getEmployeeAddress());
+    }
+
     public static void performduty()
     {
         System.out.println("  Doctor is attending patient");

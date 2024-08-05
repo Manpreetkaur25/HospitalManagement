@@ -1,7 +1,6 @@
 package Hospital.Employee;
 
-public class Receptionist extends Employee
-{
+public class Receptionist extends Employee {
 
     private String appointmentSchedule;
 
@@ -14,9 +13,15 @@ public class Receptionist extends Employee
         this.appointmentSchedule = appointmentSchedule;
     }
 
+    @Override
+    public void displayEmployeeDetails() {
+        System.out.println("Receptionist Name" + getEmployeeName());
+        System.out.println("Receptionist Email" + getEmployeeEmail());
+        System.out.println("Receptionist Gender" + getEmployeeGender());
+        System.out.println("Receptionist address" + getEmployeeAddress());
+    }
 
-    public static void performduty()
-    {
+    public static void performduty() {
         System.out.println("is Managing records/doing billing");
     }
 

@@ -25,6 +25,13 @@ public class Nurse  extends Employee
         super(employeeName, employeeDOB, employeeEmail, employeeGender, employeeAddress, employeeContactNumber);
         
     }
+    @Override
+    public void displayEmployeeDetails() {
+        System.out.println("Nurse Name" + getEmployeeName() );
+        System.out.println("Nurse Email" + getEmployeeEmail());
+        System.out.println("Nurse Gender" + getEmployeeGender());
+        System.out.println("Nurse address" + getEmployeeAddress());
+    }
 
     public static void  performduty()
     {

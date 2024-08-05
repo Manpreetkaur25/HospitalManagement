@@ -36,4 +36,5 @@ public class Billing extends MedicalRecord
         this.billingDate = billingDate;
         this.paymentMethod = paymentMethod;
     }
+
 }

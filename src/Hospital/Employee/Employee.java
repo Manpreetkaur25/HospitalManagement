@@ -46,4 +46,11 @@ public class Employee
         this.employeeAddress = employeeAddress;
         this.employeeContactNumber = employeeContactNumber;
     }
+
+    public void displayEmployeeDetails() {
+        System.out.println("Employee Name" + employeeName );
+        System.out.println("Person Email" + employeeEmail);
+        System.out.println("Employee Gender" + employeeGender);
+        System.out.println("Employee address" + employeeAddress);
+    }
 }
