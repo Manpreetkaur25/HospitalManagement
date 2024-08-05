@@ -53,9 +53,9 @@ public class Patient extends Appointment
 
     @Override
     public void displayDetails() {
-        System.out.println("Patient Id" + getPatientId());
-        System.out.println("Patient Name" + getPatientName());
-        System.out.println("Patient Address" + getPatientAddress());
-        System.out.println("Patient contact" + getPatientContactno());
+        System.out.println("Patient Id " + getPatientId());
+        System.out.println("Patient Name " + getPatientName());
+        System.out.println("Patient Address " + getPatientAddress());
+        System.out.println("Patient contact " + getPatientContactno());
     }
 }
