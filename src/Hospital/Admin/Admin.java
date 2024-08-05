@@ -5,46 +5,28 @@ import Hospital.Hospital_MIS;
 public class Admin  extends Hospital_MIS
 {
     private int adminId;
-    private String paymentMethod;
-    private String amount;
-    private String billingDate;
+    private String adminName ;
+    private String adminContactNumber;
 
-    public Admin(int adminId, String paymentMethod, String amount, String billingDate) {
+    public Admin(String hospitalName, String hospitalAddress, String hospitalContactnumber) {
+        super(hospitalName, hospitalAddress, hospitalContactnumber);
+    }
+
+    public Admin(int adminId, String adminName, String adminContactNumber) {
         this.adminId = adminId;
-        this.paymentMethod = paymentMethod;
-        this.amount = amount;
-        this.billingDate = billingDate;
+        this.adminName = adminName;
+        this.adminContactNumber = adminContactNumber;
     }
 
     public int getAdminId() {
         return adminId;
     }
 
-    public void setAdminId(int adminId) {
-        this.adminId = adminId;
+    public String getAdminName() {
+        return adminName;
     }
 
-    public String getPaymentMethod() {
-        return paymentMethod;
-    }
-
-    public void setPaymentMethod(String paymentMethod) {
-        this.paymentMethod = paymentMethod;
-    }
-
-    public String getAmount() {
-        return amount;
-    }
-
-    public void setAmount(String amount) {
-        this.amount = amount;
-    }
-
-    public String getBillingDate() {
-        return billingDate;
-    }
-
-    public void setBillingDate(String billingDate) {
-        this.billingDate = billingDate;
+    public String getAdminContactNumber() {
+        return adminContactNumber;
     }
 }

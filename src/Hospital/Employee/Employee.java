@@ -33,11 +33,6 @@ public class Employee
         return employeeContactNumber;
     }
 
-    public static void performduty()
-    {
-        System.out.println("is performing duty");
-    }
-
     public Employee(String employeeName, String employeeDOB, String employeeEmail, String employeeGender, String employeeAddress, String employeeContactNumber) {
         this.employeeName = employeeName;
         this.employeeDOB = employeeDOB;
@@ -48,9 +43,9 @@ public class Employee
     }
 
     public void displayEmployeeDetails() {
-        System.out.println("Employee Name" + employeeName );
-        System.out.println("Person Email" + employeeEmail);
-        System.out.println("Employee Gender" + employeeGender);
-        System.out.println("Employee address" + employeeAddress);
+        System.out.println("Employee Name : " + employeeName );
+        System.out.println("Person Email : " + employeeEmail);
+        System.out.println("Employee Gender : " + employeeGender);
+        System.out.println("Employee Address : " + employeeAddress);
     }
 }

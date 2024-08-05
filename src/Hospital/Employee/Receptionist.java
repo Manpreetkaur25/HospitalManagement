@@ -15,14 +15,9 @@ public class Receptionist extends Employee {
 
     @Override
     public void displayEmployeeDetails() {
-        System.out.println("Receptionist Name" + getEmployeeName());
-        System.out.println("Receptionist Email" + getEmployeeEmail());
-        System.out.println("Receptionist Gender" + getEmployeeGender());
-        System.out.println("Receptionist address" + getEmployeeAddress());
+        System.out.println("Receptionist Name : " + getEmployeeName());
+        System.out.println("Receptionist Email : " + getEmployeeEmail());
+        System.out.println("Receptionist Gender : " + getEmployeeGender());
+        System.out.println("Receptionist Address : " + getEmployeeAddress());
     }
-
-    public static void performduty() {
-        System.out.println("is Managing records/doing billing");
-    }
-
 }

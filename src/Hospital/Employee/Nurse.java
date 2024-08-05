@@ -23,8 +23,8 @@ public class Nurse  extends Employee
 
     public Nurse(String employeeName, String employeeDOB, String employeeEmail, String employeeGender, String employeeAddress, String employeeContactNumber) {
         super(employeeName, employeeDOB, employeeEmail, employeeGender, employeeAddress, employeeContactNumber);
-        
     }
+
     @Override
     public void displayEmployeeDetails() {
         System.out.println("Nurse Name" + getEmployeeName() );
@@ -32,11 +32,4 @@ public class Nurse  extends Employee
         System.out.println("Nurse Gender" + getEmployeeGender());
         System.out.println("Nurse address" + getEmployeeAddress());
     }
-
-    public static void  performduty()
-    {
-        System.out.println(" is taking care of patient");
-    }
-
-
 }

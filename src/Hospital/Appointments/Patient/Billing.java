@@ -30,6 +30,10 @@ public class Billing extends MedicalRecord
         this.paymentMethod = paymentMethod;
     }
 
+    public Billing(int appointmentId, String appointmentDate, String appointmentTime, String appointmentReason, int patientId, String patientName, String patientGender, String patientDob, String patientEmail, String patientAddress, String patientContactno, String diagnosisTreatment, String prescription, String allergies) {
+        super(appointmentId, appointmentDate, appointmentTime, appointmentReason, patientId, patientName, patientGender, patientDob, patientEmail, patientAddress, patientContactno, diagnosisTreatment, prescription, allergies);
+    }
+
     public Billing(int appointmentId, String appointmentDate, String appointmentTime, String appointmentReason, int patientId, String patientName, String patientGender, String patientDob, String patientEmail, String patientAddress, String patientContactno, String diagnosisTreatment, String prescription, String allergies, float amount, String billingDate, String paymentMethod) {
         super(appointmentId, appointmentDate, appointmentTime, appointmentReason, patientId, patientName, patientGender, patientDob, patientEmail, patientAddress, patientContactno, diagnosisTreatment, prescription, allergies);
         this.amount = amount;
@@ -37,4 +41,10 @@ public class Billing extends MedicalRecord
         this.paymentMethod = paymentMethod;
     }
 
+    @Override
+    public void displayAppointmentDetails() {
+        System.out.println("Amount : " + getAmount());
+        System.out.println("Billing Details : " + getBillingDate());
+        System.out.println("Payment Method : " + getPaymentMethod());
+    }
 }

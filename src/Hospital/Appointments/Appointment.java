@@ -3,9 +3,7 @@ package Hospital.Appointments;
 import Hospital.Hospital_MIS;
 
 public class Appointment extends Hospital_MIS
-
 {
-
     private int appointmentId;
     private String appointmentDate;
     private String appointmentTime;
@@ -27,6 +25,10 @@ public class Appointment extends Hospital_MIS
         return appointmentReason;
     }
 
+    public Appointment(String hospitalName, String hospitalAddress, String hospitalContactnumber) {
+        super(hospitalName, hospitalAddress, hospitalContactnumber);
+    }
+
     public Appointment(int appointmentId, String appointmentDate, String appointmentTime, String appointmentReason) {
         this.appointmentId = appointmentId;
         this.appointmentDate = appointmentDate;
@@ -34,10 +36,10 @@ public class Appointment extends Hospital_MIS
         this.appointmentReason = appointmentReason;
     }
 
-    public void displayDetails() {
-        System.out.println("Appointment Id" + getAppointmentId());
-        System.out.println("Appointment Date" + getAppointmentDate());
-        System.out.println("Appointment Time" + getAppointmentTime());
-        System.out.println("Appointment Reason" + getAppointmentReason());
+    public void displayAppointmentDetails() {
+        System.out.println("Appointment Id : " + getAppointmentId());
+        System.out.println("Appointment Date : " + getAppointmentDate());
+        System.out.println("Appointment Time : " + getAppointmentTime());
+        System.out.println("Appointment Reason : " + getAppointmentReason());
     }
 }
