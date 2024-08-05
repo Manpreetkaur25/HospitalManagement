@@ -14,6 +14,14 @@ public class Receptionist extends Employee
         this.appointmentSchedule = appointmentSchedule;
     }
 
+    @Override
+    public void displayEmployeeDetails() {
+        System.out.println("Receptionist Name" + getEmployeeName() );
+        System.out.println("Receptionist Email" + getEmployeeEmail());
+        System.out.println("Receptionist Gender" + getEmployeeGender());
+        System.out.println("Receptionist address" + getEmployeeAddress());
+    }
+
 
     public static void performduty()
     {

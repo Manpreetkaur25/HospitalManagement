@@ -50,4 +50,12 @@ public class Patient extends Appointment
         this.patientAddress = patientAddress;
         this.patientContactno = patientContactno;
     }
+
+    @Override
+    public void displayDetails() {
+        System.out.println("Patient Id" + getPatientId());
+        System.out.println("Patient Name" + getPatientName());
+        System.out.println("Patient Address" + getPatientAddress());
+        System.out.println("Patient contact" + getPatientContactno());
+    }
 }

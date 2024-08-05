@@ -33,4 +33,11 @@ public class Appointment extends Hospital_MIS
         this.appointmentTime = appointmentTime;
         this.appointmentReason = appointmentReason;
     }
+
+    public void displayDetails() {
+        System.out.println("Appointment Id" + getAppointmentId());
+        System.out.println("Appointment Date" + getAppointmentDate());
+        System.out.println("Appointment Time" + getAppointmentTime());
+        System.out.println("Appointment Reason" + getAppointmentReason());
+    }
 }
